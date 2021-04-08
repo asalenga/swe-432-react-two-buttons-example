@@ -1,11 +1,13 @@
 {
   "name": "swe-432-swe-4-two-buttons-example32-react-two-buttons-example",
   "version": "0.0.7",
-  "keywords": ["GMU"],
+  "keywords": [
+    "GMU"
+  ],
   "dependencies": {
     "react": "17.0.0",
     "react-dom": "17.0.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
     "typescript": "3.8.3"
@@ -16,5 +18,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
