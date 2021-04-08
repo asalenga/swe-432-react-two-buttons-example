@@ -45,10 +45,18 @@ function TwoButtons(props) {
     [firstValue, secondValue, setResult]
   );
 
-  const handleSubstractChange = useCallback(
+  const handleSubtractChange = useCallback(
     (event) => {
       event.preventDefault(); // prevents form submit action
       setResult(+firstValue - +secondValue);
+    },
+    [firstValue, secondValue, setResult]
+  );
+
+  const handleMultChange = useCallback(
+    (event) => {
+      event.preventDefault(); // prevents form submit action
+      setResult(firstValue * secondValue);
     },
     [firstValue, secondValue, setResult]
   );
@@ -124,9 +132,18 @@ function TwoButtons(props) {
           type="submit"
           name="operation"
           value="sub"
-          onClick={handleSubstractChange}
+          onClick={handleSubtractChange}
         >
-          Substract
+          Subtract
+        </button>
+        <button
+          type="submit"
+          name="operation"
+          value="mult"
+          disabled={disableOperations}
+          onClick={handleMultChange}
+        >
+          Multiply
         </button>
         <button onClick={handleResetChange}>Reset</button>
       </form>
