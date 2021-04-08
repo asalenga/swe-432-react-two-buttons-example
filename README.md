@@ -1,1 +1,1 @@
-# swe432-twobuttons-reactjs
+# swe-432-react-two-buttons-example
